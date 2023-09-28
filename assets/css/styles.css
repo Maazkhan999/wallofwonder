@@ -1,0 +1,374 @@
+:root {
+    --color1: #001219;
+    --color2: #005f73;
+    --color3: #3d9397;
+    --color4: #94d28d;
+    --color5: #e9d8a6;
+    --color6: #ee9800;
+    --color7: #ca6702;
+    --color8: #bb3e03;
+    --color9: #ae2012;
+    --color10: #9b2226;
+}
+
+
+/* generic site styles */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+section{
+    max-width: 1200px;
+    margin: 0 auto 5rem auto;
+    padding: 0 1rem;
+    
+}
+section h2{
+    font-size: 2.4rem;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #DBE5DE;
+    padding: 0;
+    margin: 0;
+}
+/* header section start  */
+.header{
+    background-color: var(--color5);
+}
+header{
+    padding: 1rem;
+}
+nav ul{
+    display:flex;
+    flex-flow: row wrap;
+    margin: 0px;
+    padding:0px;
+    align-items: space-between;
+    justify-content: space-around;
+    list-style: none;
+}
+nav ul li{
+    flex-basis: 48%;
+    padding-bottom: 0.5rem;
+}
+ nav ul a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--color10);
+    color: white;
+    padding:0.5rem; 
+    border-radius: 0.5rem;  
+ }
+ nav ul li:first-child{
+    max-width: 100%;
+    text-align: center;
+ }
+
+nav li:first-child a{
+    background-color: transparent;
+}
+
+ nav ul li a:hover{
+    background-color: var(--color2);
+    color: var(--color5);
+ }
+/* ================haeder styling End  */
+
+/* hero styling start  */
+
+#hero{
+    max-width: 100%;
+    background-color: var(--color6);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  #hero img{
+    max-width: 100%;
+    max-height:454px;
+  }
+  /* hero style  */
+  .mission{
+    margin-bottom: 3rem;
+  }
+.mission-text{
+    display: block;
+    line-height: 1.74;
+}
+.mission-img{
+    max-height: 100px;
+    display: block;
+}
+/* image ul list  */
+section ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+figure{
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 5px;
+
+}
+figure img{
+    width: 100%;
+    object-fit: cover ;
+    margin-bottom: -5px;
+    object-position: 0 -130px;
+}
+
+
+figcaption{
+    background-color: rgb(255, 255,255, 0.8);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.875rem;
+}
+figcaption a{
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color:var(--color1)
+}
+
+.color7,
+.color7 a:hover{
+    border-color: var(--color7);
+    color: var(--color7);
+}
+.color2,
+.color2 a:hover{
+    border-color: var(--color2);
+    color: var(--color2);
+}
+.color6,
+.color6 a:hover{
+    border-color: var(--color6);
+    color: var(--color6);
+}
+.color8,
+.color8 a:hover{
+    border-color: var(--color8);
+    color: var(--color8);
+}
+.color4,
+.color4 a:hover{
+    border-color: var(--color4);
+    color: var(--color4);
+}
+.color3,
+.color3 a:hover{
+    border-color: var(--color3);
+    color: var(--color3);
+}
+#feature{
+    max-width: 100%;
+    background-color: var(--color6);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  #feature img{
+    max-width: 100%;
+    max-height:454px;
+  }
+  .new-color1,
+  .new-color1 a:hover{
+      border-color: var(--color6);
+      color: var(--color6);
+
+  }
+  .new-color2,
+  .new-color2 a:hover{
+      border-color: var(--color7);
+      color: var(--color7);
+
+  }
+  .new-color3,
+  .new-color3 a:hover{
+    border-color: var(--color4);
+    color: var(--color4);
+
+}
+
+.strip{
+    background-color: #005f73;
+    color: white;
+    padding: 1rem 0 2rem 0;
+}
+/* feature image styling */
+#Featured figure{
+    max-height:650px ;
+}
+#Featured img{
+    object-position: 0;
+}
+.footer{
+    background-color: var(--color5);
+}
+footer{
+    padding: 3rem;
+    margin:0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 1200px;
+} 
+footer h4{
+    margin-top:0px
+}
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+footer li{
+    margin-right: 1rem;
+}
+footer address{
+    margin-top: 2rem;
+    font-weight: 800;
+}
+
+ 
+  
+
+
+@media (min-width: 550px){
+    header{
+        padding: 3rem;
+    }
+    nav ul{
+        justify-content: center;
+        gap: 1.2em;
+    }
+    nav ul li:first-child{
+        flex-basis: 100%;
+        margin-bottom: 0;
+    }
+    nav ul li{
+        flex-basis: auto;
+        margin-bottom: 0;
+    }
+    nav ul a{
+        color: var(--color1);
+        background-color: transparent;
+        padding:0;
+    }
+     nav ul li a:hover{
+        color: var(--color1);
+        background-color:transparent;
+    } 
+    .mission-text{
+        max-width: 900px;
+        display: flow-root;
+    }
+    .mission-img{
+     float: left;
+     max-height: 211px;  
+    shape-outside:polygon(35.84% 94.87%,34.64% 87.05%,55.64% 4.01%,55.1% 2.38%) ; 
+        
+    }
+    section ul,footer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    section ul li,
+    .social,
+    address{
+        flex-basis: 49.8%;
+    }
+
+    #popular-print li:last-child{
+        flex-basis: 100%;
+        }
+        #popular-print li:last-child figure img{
+            object-position: 0 -340px;
+
+        }
+
+    footer address{
+        margin-top: 0rem;
+    }
+    #popular-print{
+
+    }
+   
+
+    
+  
+
+
+ }
+ @media (min-width:800px){
+    nav ul li a:hover{
+        color: var(--color5);
+        background-color:var(--color1);
+    }
+    nav ul li:first-child{
+        flex-basis: auto;
+        margin: 0 auto;
+        order:2;
+
+    }
+    nav li:nth-child(2),
+    nav li:nth-child(3){
+    order:1;
+    }
+
+    nav li:nth-child(4),
+    nav li:nth-child(5){
+        order:3;
+    }
+
+    section ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    section ul li ,.social
+    ,#popular-print li:last-child{
+        flex-basis: 32%;
+    }
+    #popular-print ul li figure img{
+        object-position: 0px;
+    }
+    #popular-print li:last-child figure img{
+        object-position: 0px;
+    }
+
+   
+    address{
+        flex-basis: 62.55%;
+    }
+    
+
+ }
+
+
+
+
+
+
+
+
